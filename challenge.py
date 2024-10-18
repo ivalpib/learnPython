@@ -47,3 +47,92 @@
  #split the words by space but can use anything inside ""
 # userlist = replaced_user_name.split(" ")
 # print(f"The firstname is: {userlist[0]}")
+
+# use assert to terminate the program if condition does not meet 
+#example age = -16
+# assert age > 0
+# print (age) //it won't print age unless assert condition is met
+
+# expenses = [889, 788, 5656, 4455, 455, 45]
+# total = 0
+# for each in expenses:
+#     total += each
+
+# average = total / len(expenses)
+# print(f" the number of element in expenses is {len(expenses)}")
+# print(f" The total expenses is: {total}")
+# print(f" The average expenses is: {average}")
+
+# values = [10, 0, 25, 0, 50, -1, 40]
+# total = 0
+# n = 0
+# for tot in values:
+#     if tot == 0:
+#         continue
+#     elif tot < 0:
+#         break
+#     total+=tot
+#     i +=1
+
+# print(f" The total value is: {total}")
+# print(f" The average value is: {total/n}")
+
+# name_list = ['Samir','Suman',"Shai",'Sulav','Simran','Sahil','Summer','Sandhya']
+# name_list.remove(name_list[6])
+# name_list.remove(name_list[6])
+# print(name_list)
+
+#challenge 15
+
+# days = []
+# days.append("Sunday")
+# days.append("Monday")
+# days.append("Tuesday")
+# days.append("Wednesday")
+# days.append("Thursday")
+# days.append("Friday")
+# days.append("Saturday")
+# print(days)
+
+# select_day = [day for day in days if day.startswith('S')]
+# print(select_day)
+
+# challenge set
+
+# set_A = {'rum', 'whisky', 'brandy'}
+# set_B = {'vodka','beer','whisky'}
+
+# print(set_A.difference(set_B))
+# print(set_A.intersection(set_B))
+# print(set_A.union(set_B))
+# print(set_A.symmetric_difference(set_B))
+# set_A.symmetric_difference_update(set_B)
+# print(set_A)
+
+# dictionary
+
+personal_info = {
+    'name': 'Biplav',
+    'surname':'Karki',
+    'address': '7 Wallace St',
+    'movies': ['Mission Impossible','Catch me if you can','Jason Bourne'],
+    'hobbies': {
+        'sport': 'football',
+        'online_game': 'pubg'
+    }
+}
+
+# print(personal_info['hobbies']['sport'])
+# personal_info['hobbies']['music'] = 'too much love will kill you'
+# personal_info['something'] = 'anything'
+# print(personal_info['something'])
+# print(personal_info['hobbies']['music'])
+# personal_info.pop('something')
+# print(personal_info)
+# y = []
+# for x in range(1,6):
+#     y.append(x)
+# print(y)
+
+# z = [x ** 2 for x in range(1,6) if x > 2]
+# print(z)

@@ -31,6 +31,7 @@ set = {'I live in',7,'Wallace','Street',2148}
 # print(type(set[1])) 
 print(type(set))
 
+# Dictionary use curly braces {}
 print("*** DICTIONARY ***")
 dict = {
     "name":"Biplav",
@@ -40,10 +41,14 @@ dict = {
 print(type(dict["name"]))
 print(type(dict))
 
-
+#find age utilising datetime from datetime
 birthYear = int(input("Enter the you are born: "))
 currentYear = datetime.now().year
-
 age = currentYear - birthYear
-
 print(age)
+
+# double slash (//) is an integer division 
+num1 = 7
+num2 = 2
+result = num1//num2 
+print(f"The result is: {result}")# output would be 3 

@@ -136,3 +136,55 @@ personal_info = {
 
 # z = [x ** 2 for x in range(1,6) if x > 2]
 # print(z)
+# choice = 'yes'
+# student_score = {}
+# while choice == 'yes':
+#     name = input("Enter the name of the student: ")
+#     score = float(input(f" Enter the score of {name}: "))
+#     student_score.update({name:score})
+#     choice = input(' You want to add more score: (YES/NO) ').lower()
+#     print(choice)
+#     if choice == 'y':
+#         choice = 'yes'
+#     print(choice)
+# print(student_score)
+# above_80 = { name:score for name,score in student_score.items() if score > 80}
+# print(above_80)
+
+# # functions
+# from datetime import datetime
+
+# def findCube(x):
+#     result = x ** 3
+#     return result
+
+# def calculateAge(year):
+#     age = datetime.today().year  - year
+#     print(age)
+
+# print(findCube(2))
+# calculateAge(1995)
+
+# inheritance
+
+class Vehicle:
+    def __init__(self, make, model):
+        self.make = make 
+        self.model = model
+
+    def get_details(self):
+        print(f"This vehicle is made by {self.make} and the model is {self.model}")
+
+class Car(Vehicle):
+    def __init__(self, year, make, model):
+        self.year = year
+        super().__init__(make, model)
+    
+    def get_details(self):
+        print(f"The car is built in {self.year}")
+        return super().get_details()
+
+car1 = Car(1995, 'Toyota', 'Sedan')
+car1.get_details()
+
+
